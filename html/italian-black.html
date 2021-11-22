@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/italian-black.css">
+    <link rel="stylesheet" href="../media/italian-black.css">
+    <link rel="stylesheet" href="../css/moda.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header >
+        <div class="header-block">
+            <p>Free shipping Australia wide!</p>
+        </div>
+        <div class="header-nav">
+          <nav class="nav">
+            <button type="button" class="hamburger" id="hamburger" onclick="openFunction()">
+              <span></span>
+          </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="#"> Key Organisation</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Create account</a></li>
+               <select class="curses">
+                 <option class="curs" >aud</option>
+                 <option class="curs" >inr</option>
+                 <option class="curs">gbp</option>
+                 <option class="curs">cad</option>
+                 <option class="curs">usd</option>
+                 <option class="curs" >eur</option>
+                 <option class="curs">jpy</option>
+               </select>
+               <a href="#" class="closebtn" onclick="closeFunction()"><i class="fal fa-times"></i></a>
+            </ul>
+        </nav>
+           <div><a href="../index.html"><img src="../images/logo.png" alt=""  class="logo"></a></div>
+           <div onclick="openShop()">
+            <div  class="shop" id="shop"  ><i class="fal fa-shopping-bag shop" ></i>
+            <span class="shop-amount">0</span>
+            </div>
+          </div>
+            <div class="shopping-card" id="shopping-card">
+              <p class="shoping-card_title"> Shopping Cart	</p>
+              <div class="shoping-card_line"></div>
+              <p class="shoping-card_text">Your cart is currently empty.</p>
+              <a href="#" class="closebtn" onclick="closehop()"><i class="fal fa-times"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- products -->
+
+    <div class="black-container">
+        <!-- slider images -->
+        <!-- left area -->
+        <div class="black-container_images">
+            <div
+            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+            class="swiper mySwiper2"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide black-slide">
+                <img src="../images/black1.jpg" id="primery"/>
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black2.jpg" />
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black3.jpg" />
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black4.jpg" />
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black5.jpg" />
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black6.jpg" />
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black7.jpg" />
+              </div>
+              <div class="swiper-slide black-slide">
+                <img src="../images/black8.jpg" />
+              </div>
+     
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper blackSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide smoll">
+                <img src="../images/black1.jpg" id="primery1"/>
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black2.jpg"  />
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black3.jpg"  />
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black4.jpg"  />
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black5.jpg"  />
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black6.jpg"  />
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black7.jpg"  />
+              </div>
+              <div class="swiper-slide smoll">
+                <img src="../images/black8.jpg"  />
+              </div>
+            </div>
+          </div>
+         </div> 
+         <!-- right area -->
+        <div class="black-container_result">
+            <h1>Black</h1>
+            <div class="stars">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span>394 reviews</span>
+            </div>
+            <div class="mlo"><span>Rs. 2,719.54</span></div>
+            <div class="result-text">
+                <span>Or <strong>$12.48 AUD</strong> fortnightly with </span> 
+                <img src="../images/afterpay.png" alt="" class="afterpay">
+                 <a href="#" id="myBtn">More info</a>     
+                        <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                         <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="closee"> <i class="far fa-times"></i></span>
+                <a href="https://www.afterpay.com/en-US/terms-of-service" target="_blank" >
+                    
+                     <img src="../images/morethem.png" alt=""  class="moreinfo">
+                 </a>
+   
+                 </div>
+
+                </div>  
+               <!-- 4 colors -->
+                <div class="color-txt"><p>Colour</p></div>
+               <div class="colors">
+                 <div id="black-color"> <img src="../images/color-black.jpg" alt="" class="colors-product active" id="colors-product_black" > </div>
+                 <div id="cocoa-color" > <img src="../images/color-cocoa.jpg" alt="" class="colors-product" id="colors-product_coca"></div>
+                 <div id="tan-color"><img src="../images/color-tan.jpg" alt="" class="colors-product" id="colors-product_tan"></div>
+                 <div id="blush-color" > <img src="../images/color-blush.jpg" alt="" class="colors-product" id="colors-product_blush" ></div>
+                   
+               </div>
+               <!-- accessories -->
+               <div class="accessories">
+                <p>Accessories</p>       
+           
+           
+            </div>
+            <div class="accessories-products">
+
+            <img src="../images/accessories1.jpg" alt="" id="myBtn1">
+                    <!-- The Modal 1 -->
+                <div id="myModal1" class="modal">
+                    <!-- Modal content 1 -->
+                <div class="modal-content">
+                <span id="close1"><i class="far fa-times"></i></span>
+                   <p class="modal-title">Multi-Tool</p>
+                   <hr>
+                   <div class="modal-text">
+                      <div class="modal-img">
+                        <img src="../images/accessories1.jpg" alt="">
+                      </div>
+                      <div>
+                        <p class="modal-price">$14.50 AUD</p>
+                         <ul class="modal-list">
+                           <li>Bottle opener</li>
+                           <li>Flathead screwdriver</li>
+                           <li>Box cutter</li>
+                           <li>Nail file</li>
+                           <li>Pry tool</li>
+                           <li>Stainless steel</li>
+                         </ul> 
+                         <button class="modal-btn">add to cart</button>
+                      </div>
+                   </div>
+                  </div>
+               </div>
+              
+               <img src="../images/accessories2.jpg" alt="" id="myBtn2">
+               <!-- The Modal 2 -->
+           <div id="myModal2" class="modal">
+               <!-- Modal content 2 -->
+               <div class="modal-content">
+                <span id="close2"><i class="far fa-times"></i></span>
+                   <p class="modal-title">USB - 64GB</p>
+                   <hr>
+                   <div class="modal-text">
+                      <div class="modal-img">
+                        <img src="../images/accessories2.jpg" alt="">
+                      </div>
+                      <div>
+                        <p class="modal-price">$31.00 AUD</p>
+                         <ul class="modal-list">
+                           <li> 64GB Storage</li>
+                           <li>USB 3.0</li>
+                           <li>Matte stainless finish</li>
+                           <li>Silicone washer included</li>
+                         </ul> 
+                         <button class="modal-btn">add to cart</button>
+                      </div>
+                   </div>
+                  </div>
+          </div>
+          <img src="../images/accessories3.jpg" alt="" id="myBtn3">
+          <!-- The Modal 3 -->
+      <div id="myModal3" class="modal">
+          <!-- Modal content 3 -->
+          <div class="modal-content">
+            <span id="close3"><i class="far fa-times"></i></span>
+               <p class="modal-title">Titanium Keyring</p>
+               <hr>
+               <div class="modal-text">
+                  <div class="modal-img">
+                    <img src="../images/accessories3.jpg" alt="">
+                  </div>
+                  <div>
+                    <p class="modal-price">$13.00 AUD</p>
+                     <p>The Jibbon grade 5 titanium keyring attachment will allow you to add your fob, extra keys or electronic car key to the D-ring.
+                     </p>
+                      <p> Outside dimensions: 25mm x 14mm x 2.8mm</p>
+                     <button class="modal-btn">add to cart</button>
+                  </div>
+               </div>
+              </div>
+     </div>
+
+
+          
+
+           
+
+                  
+
+              </div>
+               
+              
+
+            </div>
+            <div class="mono" >
+                <p>Monogramming ($15 AUD)</p>
+                <select class="mono-section" >
+                    <option class="mono-opt" >No</option>
+                    <option  class="mono-opt" >Yes</option>
+                </select>
+                <button class="btn-mono">add to cart</button>
+            </div>
+            <!-- list -->
+            <div class="list">
+                <ul >
+                    <li >Protects your belongings</li>
+                    <li>No tools required to assemble</li>
+                    <li>No painted leather edging, the leather wraps around the edge</li>
+                    <li>316 marine grade stainless steel</li>
+                    <li>Extension shaft included – holds 3 to 9 standard keys (6 to 18.5mm)</li>
+                    <li>Backed by our 3-year warranty </li>
+                    <li>Patented spring locking mechanism</li>
+                    <li>Premium Italian leather</li>
+                </ul>
+            </div>
+            <!-- accordion  -->
+            <div class="accordion">
+              <hr>
+              <div class="contentBx">
+                <div class="label">Add-Ons </div>
+                <div class="content">
+                <p><strong> Multi-tool:</strong>6-in-1 marine grade stainless steel multi tool. Enjoy the benefits of a bottle opener, screwdriver, box cutter, nail file and pry tool. Only 2.5mm thick, perfect for any adventure!
+                  </p>
+                  <p><strong>Titanium Keyring:</strong>Easily add your car key or other key fob with this grade 5 titanium key ring. One hand operation and simple one piece design means you don’t need to worry about damaging your nails.
+                  </p>
+                  <p><strong>USB Flash Drive:</strong>64GB USB 3.0 flash drive. Easily store files conveniently on the go. Compact design measuring 4.5mm thick. </p>
+
+                </div>
+              </div>
+              <hr>
+              <div class="contentBx">
+                <div class="label">Delivery </div>
+                <div class="content">
+                    <p><strong>Australia </strong> 
+                      <br>
+                      We offer free standard shipping on all orders (2 – 4 days).
+                      $12 AUD express shipping Australia wide (1 – 2 days).
+                      <br>
+                      All orders are dispatched from our Sydney workshop, please allow 1 day for processing.
+                      <br>
+                      <br>
+                      <br>
+                      <strong>International </strong> 
+                      <br>
+                      Standard shipping starts from $7.50 AUD (6 – 12 days).
+                      We use DHL express for priority orders ( 2 – 3 days).
+                      <br>
+                      Please allow 1 day for processing. For more information visit our <strong>Shipping </strong>  page.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="contentBx">
+                <div class="label">Process & Design </div>
+                <div class="content">
+                    <p>
+                      We take pride in handling all aspects of product development, from design to manufacturing and packaging. The very best craftsmanship and care goes into manufacturing the key organiser.
+                      <br>
+                      Each key organiser starts as a Italian leather hide. It’s carefully dyed, dried and then cut to shape. A vegetable tanned leather base is hand-bonded before stitching. The stainless steel parts are post-machined and checked for tolerances.   
+                    </p>
+                    <img class="acardion-image" src="../images/acardion-image.gif" alt="">
+                    <p>Final assembly includes adding the D-ring and packaging. The packaging is made from 100% recycled materials and is glued using biodegradable corn-starch. 
+                      <br>
+                      We've worked closely with global suppliers to source the best materials and test our designs. Each key organiser made is checked more than once, ensuring you get the product we envisioned. </p>
+                </div>
+              </div>
+              <hr>
+              <div class="contentBx">
+                <div class="label">Lifetime Guarantee </div>
+                <div class="content">
+                  <p>We’re confident in what we make and guarantee that you will find more satisfaction using our product than any other key holder. If we do not meet these expectations, feel free to send your purchase back to us with a note describing what we can improve upon and we will issue a full refund</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+         <!-- data link icons -->
+            <div class="data-link">
+              <a class="icon-fasebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.jibbonkey.com%2Fproducts%2Fitalian-cocoa" target="_blank" >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Cocoa&url=https%3A%2F%2Fwww.jibbonkey.com%2Fproducts%2Fitalian-cocoa&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0071%2F9454%2F2169%2Fproducts%2FJasper_Avenue_Jibbon-13-jackPNG-no-emboss_1024x1024.jpg%3Fv%3D1633042392" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+                <a class="icon-pinterest" href="https://www.pinterest.es/pin/create/button/?url=https://www.jibbonkey.com/products/italian-cocoa&media=http://cdn.shopify.com/s/files/1/0071/9454/2169/products/Jasper_Avenue_Jibbon-13-jackPNG-no-emboss_1024x1024.jpg?v=1633042392&description=Cocoa" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a class="icon-google" href="https://plus.google.com/up/?continue=https://plus.google.com/share?url%3Dhttps://www.jibbonkey.com/products/italian-cocoa" target="_blank">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+            </div>
+        
+            
+
+            
+        </div>
+    
+    </div>
+    </div>
+
+    <!-- Rich text -->
+    <div class="rich">
+      <h3 class="rich-text"> Seamless Organisation</h3>
+      <p class="rich-title">The Jibbon is a thoughtfully created, minimalistic key organiser that eliminates unnecessary bulk and protects your phone and other valuables. It encompasses your keys with high-quality Italian leather and is made to last.</p>
+    </div>
+
+    <!-- Rich slider -->
+    <div class="swiper richSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide rich-img">
+          <img src="../images/rich1.jpg" alt="">
+        </div>
+        <div class="swiper-slide rich-img">
+          <img src="../images/rich2.jpg" alt="">
+        </div>
+        <div class="swiper-slide rich-img">
+          <img src="../images/rich3.jpg" alt="">
+        </div>
+     
+      </div>
+      <div class="swiper-button-next rich-next"></div>
+      <div class="swiper-button-prev rich-prev"></div>
+      <div class="swiper-pagination rich-pag"></div>
+    </div>
+    <!-- big image -->
+    <div class="jibbo">
+      <img src="../images/Jibbon.jpg" alt="">
+    </div>
+    <!-- Reviews -->
+    <div class="reviews">
+      <div class="retings">
+        <div class="stars2">
+          <p class="reting-txt">4.9</p>
+          <span id="star-bolt"><i class="fas fa-star" ></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>  
+      </div>
+      
+      <span class="st-txt">Based on 394 Reviews</span>
+
+      </div>  
+      <div id="write-btn">
+        <span>
+          <i class="far fa-edit"></i>
+          Write a Review
+        </span>
+      </div>
+
+
+
+
+
+    </div>
+    <!-- write comment -->
+    <div class="rev">
+      <div class="reviws-count">
+        <span>Reviews 394</span>
+     
+      </div>
+     <hr>
+       <!-- comments area       -->
+       <div id="forms">
+       <form action="/action_page.php" method="post">
+         <div class="form-inp">
+           <div>   
+             <label >Name</label>
+          <input type="text" name="fname" required placeholder="Enter your name" class="inp-txt">
+        </div>
+            <div>
+               <label>Email</label>
+         <input type="email" name="fname" required placeholder="john.swith@example.com"  class="inp-txt">
+        </div>
+        
+         </div>
+         <div class="retings">
+           <label>Rating</label>
+         </div>
+     
+          <div class="reting-stars">
+             <span id="icon"><i class="fal fa-star"></i></span>
+             <span id="reting-star2"><i class="fal fa-star"></i></span>
+              <span id="reting-star3"><i class="fal fa-star"></i></span>
+              <span id="reting-star4"><i class="fal fa-star"></i></span>
+              <span id="reting-star5"><i class="fal fa-star"></i></span>
+             
+          </div>
+          <div>
+            <label> Title of Review</label>
+            <input class="inp-title" type="text"name="fname" required placeholder="Give your review a title">
+          </div>
+          <div>
+            <label >How was your overall experience?</label>
+            <textarea name="" id="" cols="30" rows="10" ></textarea>
+          </div>
+      <br>
+      <!-- choose photo -->
+          <div class="submit-add">  
+      <div class="parent-div">
+        <output id="list"></output>
+        <button class="btn-upload"><i class="fas fa-camera">Add Photos</i></button>
+        <input type="file" id="files" name="files[]" multiple  />
+      </div>
+      <input class="submit" type="submit" value="Submit" >
+    </div>
+      </form></div>
+    </div>
+
+
+<!-- comments -->
+
+<div class="peopels-comments">
+  <!-- comment 1 -->
+<div class="comments">
+  <div class="peopel-comment">
+    <div class="up">
+    <div class="peopel-img">
+      <img class="peopel-img" src="../images/peopel1.jpg" alt="">
+    <i class="fas fa-check-square ok"></i>
+    </div>
+    <div class="colum">
+    <div class="data-name">
+        <strong>Maurizio F.</strong>
+        <span class="green">Verified Buyer</span>
+     
+
+    </div>
+    
+    <div class="flag">
+      <img src="../images/it.png" alt="">
+      <span>Italy</span>
+    </div>
+    <div class="stars-com">
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+    </div>
+  </div>
+    </div>
+    <div class="data">
+    <span>03/11/2021</span>
+    </div>
+  
+</div>
+<div class="comment-text">
+  <strong>Useful, compact, elegant  </strong>
+  <br>
+  <span>I was looking for a keychain to attach to my car key with the problem of not damaging the key. And also to have brought together the fundamental keys in a single object. With this key organizer I have achieved my purpose by adding a pleasant elegance. Simple and sturdy.</span>
+</div>
+<div class="com-img">
+  <img src="../images/coment1.jpg" alt="">
+  <img src="../images/coment2.jpg" alt="">
+  <img src="../images/coment3.jpg" alt="">
+</div>
+<div>
+  <span>All Black - Limited Edition-No</span>
+</div>
+<div class="sher-like">
+<div class="shere">
+  <i class="far fa-share-square" id="shere1"> Shere</i>
+  <div id="share-fb-tw1">
+  <span >
+    &nbsp; | &nbsp;&nbsp;
+    <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=222664514734026&display=popup&href=https%3A%2F%2Fjibbon.com.au%2Fa%2Freview%2Ffacebookpost%3FreviewId%3D58470019&redirect_uri=https%3A%2F%2Fstamped.io%2Fshares%3Freview_id%3D58470019">fasebook</a>
+    &nbsp;•&nbsp; 
+    <a target="_blank" href="https://twitter.com/intent/tweet?text=I%20was%20looking%20for%20a%20keychain%20to%20attach%20to%20my%20car%20key%20with%20the%20problem%20of%20not%20damaging%20the%20key.%20And%20also%20to%20have%20brought%20together%20the%20fundame&url=https%3a%2f%2fjibbon.com.au%2fa%2freview%2ftwittercard%3freviewId%3d58470019">twitter</a>
+  </span>
+</div>
+</div>
+<div class="like">
+  <span>Was this helpful? </span>
+  <i class="fas fa-thumbs-up">0</i>
+<i class="fas fa-thumbs-down">0</i>
+</div>
+</div>
+</div>
+  <!-- comment 2 -->
+
+<div class="comments">
+  <div class="peopel-comment">
+    <div class="up">
+    <div class="peopel-img">
+      <img class="peopel-img" src="../images/peopel2.jpg" alt="">
+    <i class="fas fa-check-square ok"></i>
+    </div>
+    <div class="colum">
+    <div class="data-name">
+        <strong>Pawel K.</strong>
+        <span class="green">Verified Buyer</span>
+     
+
+    </div>
+    
+    <div class="flag">
+      <img src="../images/ch.png" alt="">
+      <span>Switzerland</span>
+    </div>
+    <div class="stars-com">
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+      <span><i class="fas fa-star"></i></span>
+    </div>
+  </div>
+    </div>
+    <div class="data">
+    <span>15/11/2021</span>
+    </div>
+  
+</div>
+<div class="comment-text">
+  <strong>Very satisfied  </strong>
+  <br>
+  <span>The product is exactly as expected. Made of very good quality materials. Adding additional keys is fast and easy.</span>
+</div>
+<div>
+  <br>
+  <span>Cocoa-No</span>
+</div>
+<div class="sher-like">
+<div class="shere">
+  <i class="far fa-share-square" id="shere2"> Shere</i>
+  <div id="share-fb-tw2">
+  <span >
+    &nbsp; | &nbsp;&nbsp;
+    <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=222664514734026&display=popup&href=https%3A%2F%2Fjibbon.com.au%2Fa%2Freview%2Ffacebookpost%3FreviewId%3D58470019&redirect_uri=https%3A%2F%2Fstamped.io%2Fshares%3Freview_id%3D58470019">fasebook</a>
+    &nbsp;•&nbsp; 
+    <a target="_blank" href="https://twitter.com/intent/tweet?text=I%20was%20looking%20for%20a%20keychain%20to%20attach%20to%20my%20car%20key%20with%20the%20problem%20of%20not%20damaging%20the%20key.%20And%20also%20to%20have%20brought%20together%20the%20fundame&url=https%3a%2f%2fjibbon.com.au%2fa%2freview%2ftwittercard%3freviewId%3d58470019">twitter</a>
+  </span>
+</div>
+</div>
+<div class="like">
+  <span>Was this helpful? </span>
+  <i class="fas fa-thumbs-up">0</i>
+<i class="fas fa-thumbs-down">0</i>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="peopels-comments">
+    <!-- comment 3 -->
+  <div class="comments">
+    <div class="peopel-comment">
+      <div class="up">
+      <div class="peopel-img">
+        <img class="peopel-img" src="../images/peopel3.jpg" alt="">
+      <i class="fas fa-check-square ok"></i>
+      </div>
+      <div class="colum">
+      <div class="data-name">
+          <strong>Kelly C. </strong>
+          <span class="green">Verified Buyer</span>
+       
+  
+      </div>
+      
+      <div class="flag">
+        <img src="../images/us.png" alt="">
+        <span>Italy</span>
+      </div>
+      <div class="stars-com">
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+      </div>
+    </div>
+      </div>
+      <div class="data">
+      <span>16/11/2021</span>
+      </div>
+    
+  </div>
+  <div class="comment-text">
+    <strong>Amazing!    </strong>
+    <br>
+    <span>Perfect Keychain, super minimalist    </span>
+  </div>
+ 
+  <div>
+    <br>
+    <span>Black-No</span>
+  </div>
+  <div class="sher-like">
+  <div class="shere">
+    <i class="far fa-share-square" id="shere3"> Shere</i>
+    <div id="share-fb-tw3">
+    <span >
+      &nbsp; | &nbsp;&nbsp;
+      <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=222664514734026&display=popup&href=https%3A%2F%2Fjibbon.com.au%2Fa%2Freview%2Ffacebookpost%3FreviewId%3D58470019&redirect_uri=https%3A%2F%2Fstamped.io%2Fshares%3Freview_id%3D58470019">fasebook</a>
+      &nbsp;•&nbsp; 
+      <a target="_blank" href="https://twitter.com/intent/tweet?text=I%20was%20looking%20for%20a%20keychain%20to%20attach%20to%20my%20car%20key%20with%20the%20problem%20of%20not%20damaging%20the%20key.%20And%20also%20to%20have%20brought%20together%20the%20fundame&url=https%3a%2f%2fjibbon.com.au%2fa%2freview%2ftwittercard%3freviewId%3d58470019">twitter</a>
+    </span>
+  </div>
+  </div>
+  <div class="like">
+    <span>Was this helpful? </span>
+    <i class="fas fa-thumbs-up">0</i>
+  <i class="fas fa-thumbs-down">0</i>
+  </div>
+  </div>
+  </div>
+    <!-- comment 4-->
+    <div class="comments">
+      <div class="peopel-comment">
+        <div class="up">
+        <div class="peopel-img">
+          <img class="peopel-img" src="../images/peopel6.jpg" alt="">
+        <i class="fas fa-check-square ok"></i>
+        </div>
+        <div class="colum">
+        <div class="data-name">
+            <strong>Hoa N. </strong>
+            <span class="green">Verified Buyer</span>
+         
+    
+        </div>
+        
+        <div class="flag">
+          <img src="../images/sg.png" alt="">
+          <span>Singapore</span>
+        </div>
+        <div class="stars-com">
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+        </div>
+      </div>
+        </div>
+        <div class="data">
+        <span>26/05/2021</span>
+        </div>
+      
+    </div>
+    <div class="comment-text">
+      <strong>Excellent Quality Key Organizer </strong>
+      <br>
+      <span>I love how easy it is to add and remove keys without additional tools (put the keys through the screw and fasten and then snap the square hole to close it). The leather feels smooth and nice, especially how clean and seek it looks aesthetically. Superior quality to my previous key organizer in every single way!</span>
+
+    </div>
+    <div class="com-img">
+      <img src="../images/coment5.jpg" alt="">
+    
+    </div>
+    <div>
+      <br>
+      <span>Tan-No</span>
+    </div>
+    <div class="sher-like">
+    <div class="shere">
+      <i class="far fa-share-square" id="shere4"> Shere</i>
+      <div id="share-fb-tw4">
+      <span >
+        &nbsp; | &nbsp;&nbsp;
+        <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=222664514734026&display=popup&href=https%3A%2F%2Fjibbon.com.au%2Fa%2Freview%2Ffacebookpost%3FreviewId%3D58470019&redirect_uri=https%3A%2F%2Fstamped.io%2Fshares%3Freview_id%3D58470019">fasebook</a>
+        &nbsp;•&nbsp; 
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=I%20was%20looking%20for%20a%20keychain%20to%20attach%20to%20my%20car%20key%20with%20the%20problem%20of%20not%20damaging%20the%20key.%20And%20also%20to%20have%20brought%20together%20the%20fundame&url=https%3a%2f%2fjibbon.com.au%2fa%2freview%2ftwittercard%3freviewId%3d58470019">twitter</a>
+      </span>
+    </div>
+    </div>
+    <div class="like">
+      <span>Was this helpful? </span>
+      <i class="fas fa-thumbs-up">0</i>
+    <i class="fas fa-thumbs-down">0</i>
+    </div>
+    </div>
+    </div>
+  
+
+  </div>
+
+  <div class="peopels-comments">
+    <!-- comment 5 -->
+  <div class="comments">
+    <div class="peopel-comment">
+      <div class="up">
+      <div class="peopel-img">
+        <img class="peopel-img" src="../images/peopel5.jpg" alt="">
+      <i class="fas fa-check-square ok"></i>
+      </div>
+      <div class="colum">
+      <div class="data-name">
+          <strong>Pictarine-Maxime R. </strong>
+          <span class="green">Verified Buyer</span>
+       
+  
+      </div>
+      
+      <div class="flag">
+        <img src="../images/fr.png" alt="">
+        <span>France</span>
+      </div>
+      <div class="stars-com">
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+      </div>
+    </div>
+      </div>
+      <div class="data">
+      <span>30/01/2021</span>
+      </div>
+    
+  </div>
+  <div class="comment-text">
+    <strong>Better than orbit key!   </strong>
+    <br>
+    <span>I used to have an orbit key and found out about jibbon by looking online for alternatives. Well the build quality is great and the design is definitely smart 👌�
+</span>
+  </div>
+  <div class="com-img">
+    <img src="../images/coment4.jpg" alt="">
+  
+  </div>
+  <div>
+    <br>
+    <span>Tan-No</span>
+  </div>
+  <div class="sher-like">
+  <div class="shere">
+    <i class="far fa-share-square" id="shere5"> Shere</i>
+    <div id="share-fb-tw5">
+    <span >
+      &nbsp; | &nbsp;&nbsp;
+      <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=222664514734026&display=popup&href=https%3A%2F%2Fjibbon.com.au%2Fa%2Freview%2Ffacebookpost%3FreviewId%3D58470019&redirect_uri=https%3A%2F%2Fstamped.io%2Fshares%3Freview_id%3D58470019">fasebook</a>
+      &nbsp;•&nbsp; 
+      <a target="_blank" href="https://twitter.com/intent/tweet?text=I%20was%20looking%20for%20a%20keychain%20to%20attach%20to%20my%20car%20key%20with%20the%20problem%20of%20not%20damaging%20the%20key.%20And%20also%20to%20have%20brought%20together%20the%20fundame&url=https%3a%2f%2fjibbon.com.au%2fa%2freview%2ftwittercard%3freviewId%3d58470019">twitter</a>
+    </span>
+  </div>
+  </div>
+  <div class="like">
+    <span>Was this helpful? </span>
+    <i class="fas fa-thumbs-up">0</i>
+  <i class="fas fa-thumbs-down">0</i>
+  </div>
+  </div>
+  </div>
+    <!-- comment 6-->
+    <div class="comments">
+      <div class="peopel-comment">
+        <div class="up">
+        <div class="peopel-img">
+          <img class="peopel-img" src="../images/peopel4.jpg" alt="">
+        <i class="fas fa-check-square ok"></i>
+        </div>
+        <div class="colum">
+        <div class="data-name">
+            <strong>Caylee S.</strong>
+            <span class="green">Verified Buyer</span>
+         
+    
+        </div>
+        
+        <div class="flag">
+          <img src="../images/au.png" alt="">
+          <span>Australia</span>
+        </div>
+        <div class="stars-com">
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+        </div>
+      </div>
+        </div>
+        <div class="data">
+        <span>05/08/2021</span>
+        </div>
+      
+    </div>
+    <div class="comment-text">
+      <strong>Love it!</strong>
+      <br>
+      <span>The Jibbon tool is so versatile and has ensured I no longer have annoying “jingle keys” in my bag. The main reason for me purchasing was actually that I was sick of my phone getting scratched by my keys so this is a perfect solution for me!</span>
+    </div>
+ 
+    <div>
+      <br>
+      <span>Blush-No</span>
+    </div>
+    <div class="sher-like">
+    <div class="shere">
+      <i class="far fa-share-square" id="shere6"> Shere</i>
+      <div id="share-fb-tw6">
+      <span >
+        &nbsp; | &nbsp;&nbsp;
+        <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=222664514734026&display=popup&href=https%3A%2F%2Fjibbon.com.au%2Fa%2Freview%2Ffacebookpost%3FreviewId%3D58470019&redirect_uri=https%3A%2F%2Fstamped.io%2Fshares%3Freview_id%3D58470019">fasebook</a>
+        &nbsp;•&nbsp; 
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=I%20was%20looking%20for%20a%20keychain%20to%20attach%20to%20my%20car%20key%20with%20the%20problem%20of%20not%20damaging%20the%20key.%20And%20also%20to%20have%20brought%20together%20the%20fundame&url=https%3a%2f%2fjibbon.com.au%2fa%2freview%2ftwittercard%3freviewId%3d58470019">twitter</a>
+      </span>
+    </div>
+    </div>
+    <div class="like">
+      <span>Was this helpful? </span>
+      <i class="fas fa-thumbs-up">0</i>
+    <i class="fas fa-thumbs-down">0</i>
+    </div>
+    </div>
+    </div>
+
+  </div>
+
+
+
+     <!-- footer -->
+     <footer>
+      <div class="footers">
+        <div class="footer-block">
+          <div class="footer-block_img">
+            <img src="../images/footer.png" alt="">
+          </div>
+          <div class="footer-block_icon">
+            <a target="_blank" href="https://www.facebook.com/jibbonkey"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://www.pinterest.es/jibbonkeyorganiser/_created/"><i class="fab fa-pinterest-p"></i></a>
+            <a target="_blank" href="https://www.instagram.com/jibbonkey/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="foot">
+        <div class="footer-block">
+          <a href="">Key Organisation</a>
+          <a href="">Press</a>
+          <a href="">Corporate Orders</a>
+          <a href="">Support</a>
+        </div>
+        <div class="footer-block">
+          <a href="">Our Story</a>
+          <a href="">Our Materials</a>
+          <a href="">3-Year Warranty</a>
+          <a href="">Affiliate Program</a>
+        </div>
+      </div>
+        <div class="footer-block">
+          <p>Don't miss new releases and special editions.</p>
+          <input type="email" placeholder="email@example.com" class="inp">
+          <button class="btn-sub">subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-end">
+        <p>© 2021 Jibbon</p>
+        <p>Designed in Sydney, Australia</p>
+      </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="../js/black.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/shere.js"></script>
+<script src="../js/modal.js"></script>
+  
+</html>

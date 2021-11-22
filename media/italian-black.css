@@ -1,0 +1,126 @@
+@media only screen and (max-width: 1440px){
+    .black-container{
+        padding: 115px 0px 0px 0px;
+    }
+    .form-inp {
+        width: 28%;
+        }
+}
+
+
+@media only screen and (max-width: 1024px) {
+      .black-container_result h1{
+        font-size: 29px;
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+      .stars i{
+          font-size: 12px;
+      }
+      .reting-txt{
+          font-size: 37px;
+      }
+      .mlo span{
+          font-size: 16px;
+      }
+      .color-txt,
+      .accessories{
+          font-size: 14px;
+      }
+      .smoll img{
+          height: 45px;
+          width: 45px;
+
+      }
+      .black-slide img{
+          width:  447px;
+          height: 357px;
+          padding: 80px;
+      }
+      .list ul li{
+          font-size: 14px;
+      }
+      .form-inp {
+        width: 40%;
+    }
+   
+    
+
+}
+
+@media only screen and (max-width: 425px){
+    .black-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .black-slide img{
+        width:  405px;
+        height: 357px;
+    }
+    .black-container_images{
+        height: 50%;
+        width: 100%;
+    }
+   .smoll img{
+       width: 40px;
+       height: 40px;
+   }
+   .blackSwiper{
+    width: 405px;
+    height: 40px;
+
+   }
+   .swiper-button-next:after, 
+    .swiper-button-prev:after{
+        font-size: 15px;
+        color: black;
+    }
+    .stars span {
+        font-size: 14px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .reting-txt{
+        font-size: 37px;
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+    .retings,.stars2{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .stars2 i{
+    font-size: 20px;
+  }
+    .st-txt{
+        font-size: 14px;
+    }
+
+    .form-inp{
+        display: flex;
+        flex-direction: column;
+    }
+    .inp-txt{
+        width: 310px;
+    }
+    .peopels-comments{
+        display: flex;
+        flex-direction: column;
+    }
+    .comments {
+        padding: 35px;
+        width: 100%;
+     }
+    .comment-text{
+        font-size: 14px;
+    }
+
+ 
+}
+
+

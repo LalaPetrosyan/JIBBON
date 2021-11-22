@@ -1,0 +1,237 @@
+/* slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-button-next,
+  .swiper-button-prev{
+      color: #FFFFFF;
+  }
+  .swiper-pagination-bullet{
+      background: #FFFFFF;
+  }
+  
+  
+  
+  /* product */
+  .product-display{
+      background-color: #FFFFFF;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .prod-img{
+      height: 250px;
+      width: 250px;
+  }
+  .prod-name{
+      text-align: center;   
+  }
+  .prod-name a{
+      text-decoration: none;
+      color: black;
+      font-weight: 800;
+  
+  }
+  .prod-name a:hover{
+      color:#959595 ;
+      text-decoration: underline;
+  }
+  .prod-price{
+      text-align: center;
+  }
+  
+  
+  /* slider2 */
+  .nextSwiper {
+      background-color: #FFFFFF;
+      width: 100%;
+      height: 50%;
+      margin-top: 50px;
+    }
+  
+  .nextSwiper-slide{
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+  
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .btn-next,
+    .btn-prev{
+        color: black;
+    }
+    .swiper-slide-text{
+      font-size: 14px;
+      width:55%;
+      font-family: sans-serif;
+      line-height: 2;
+    }
+    h2{
+        font-size: 22px;
+    }
+  
+  
+  /* our process  */
+  
+  .process{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .prod-img img{
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  .proces-text{
+      width: 500px;
+      text-align: center;
+  }
+  .proces-text h3{
+      font-size: 30px;
+      text-align: center;
+  }
+  .proces-text span{
+      text-align: center;
+      line-height: 2;
+  }
+  .btn-shop{
+      background:black;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      padding: 15px 25px;
+      border: 2px solid #000;
+      margin-top: 10px;
+      display: inline-block;
+  
+  }
+  
+  /* all bleck */
+  .all-black{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .all-black img{
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 60px;
+  }
+  .all-black-text{
+      width: 500px;
+      text-align: center;
+  }
+  .all-black h3{
+      font-size: 30px;
+      text-align: center;
+  }
+  .all-black span{
+      text-align: center;
+      line-height: 2;
+  }
+  
+  /* slider-instagram */
+  .insta-icon{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.25s ;
+  
+  }
+  .insta-icon:hover{
+      opacity: 1;
+  }
+  
+  
+  .insta-icon i{
+      color: #FFFFFF;
+      font-size: 40px;
+      
+  }
+  .slide-insta{
+     height: 230px;
+     width: 200px;
+     display: block;
+  }
+  
+  
+  .picture{
+      background-image: url(../images/pic.jpg);
+      background-attachment: fixed;
+      width: 100%;
+      height: 550px;
+      background-repeat: no-repeat;
+       background-size: 100% 100%;
+
+  }
+ 
+.prod-display{
+    display: flex;
+    justify-content: space-evenly;
+}

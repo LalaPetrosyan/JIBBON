@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1024px) {
+    .picture{
+        height: 450px;    
+    }
+   
+    .proces-img img{
+        height: 462px;
+        width: 462px;
+    }
+    .proces-span{
+        font-size: 14px;
+        margin:15px 0px;      
+        line-height: 2;
+
+    }
+    .proces-text{
+        height: 286px;
+        width:400px ;
+    }
+    .all-black-img img{
+        height: 462px;
+        width: 462px;
+    }
+    .all-black-text{
+        font-size: 14px;
+        margin:15px 0px;      
+        line-height: 2;
+        width: 412px;
+    }
+    .slide-insta img{
+        height: 169px;
+        width: 169px;
+    }
+    .instSwiper{
+        bottom: auto;
+    }
+   
+}
+
+
+@media only screen and (max-width: 425px){
+    .prod-img{
+        height: 130px;
+        width: 187px;
+    }
+    .product-display{
+    
+        flex-direction: column;
+        padding: 100px;
+    }
+    .prod-display{
+    display: flex;
+    max-width: 200px;
+    }
+    .nextSwiper{
+        height: 235px;
+        width: 375px;
+    }
+       
+    .picture{
+ 
+        width: 100%;
+        height: 450px;
+        background-size: 100% 45%;
+
+    }
+   
+    .process{
+    display: flex;
+    flex-direction: column;
+    }
+    .proces-img{
+        height: 425px;
+        width: 425px;
+    }
+    .proces-img img{
+        height: 425px;
+        width: 425px;
+    }
+    .proces-text{
+        width: 375px;
+        height: 281px;
+    }
+    .all-black{
+        display: flex;
+        flex-direction: column
+    }
+    .all-black h3{
+        font-size: 22px;
+    }
+    .all-black span{
+        font-size: 14px;
+    }
+    .slide-insta,
+    .slide-insta img{
+        height: 389px;
+        width:389px ;
+    }
+    .all-black-img img{
+        height: 425px;
+        width: 425px;
+    }
+    .swiper-button-next:after, 
+    .swiper-button-prev:after{
+        font-size: 15px;
+        color: black;
+    }
+    .prod-name a {
+        font-size: 15px;
+        font-weight: 200;
+    }
+}
